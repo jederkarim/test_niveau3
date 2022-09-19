@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>projet-T</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body onload="loadSocietes()">
+    <nav class="navbar navbar-expand-lg  d-flex bg-dark">
+        <div class="collapse navbar-collapse nav1 " id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active n1" id="accueil" href="listsocietes.html"><strong>Societes</strong></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active n1" id="accueil" href="listemployee.html"><strong>Employées</strong></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="c1">
+            <div class="col-6 f1 ">
+                <form method="post">
+                    <h1 class="text-center text-primary h1 t10">Ajouter un Employé</h1>
+                    <div id="alert">
+                    </div>
+                    <div class="mb-3">
+                        <label for="N" class=""><strong>Firstname :</strong> </label>
+                        <input type="text" class="form-control " id="firstname" placeholder="FirstName d'Employé">
+                        <span id="validationServer03Feedback" class="invalid-feedback">
+                            FirstName obligatoire
+                        </span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="N" class=""><strong>Lastname :</strong> </label>
+                        <input type="text" class="form-control " id="lastname" placeholder="LastName d'Employé">
+                        <span id="validationServer03Feedback" class="invalid-feedback">
+                            LastName obligatoire
+                        </span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="N" class=""><strong>Email : </strong></label>
+                        <input type="email" class="form-control " id="email" placeholder="Email">
+                        <span id="validationServer03Feedback" class="invalid-feedback">
+                            Email obligatoire
+                        </span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="N" class=""><strong>Address : </strong></label>
+                        <input type="text" class="form-control " id="address" placeholder="Address d'Employé">
+                        <span id="validationServer03Feedback" class="invalid-feedback">
+                            Address d'Employé obligatoire
+                        </span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="N" class=" ml-5 l1">Societé : </label>
+                        <select name="" class="form-select" id="societe">
+                        </select>
+                    </div>
+                    <div class="btn1">
+                        <button class="btn btn-primary btncat btn-lg me-3" id="Ajouter" type="button">Ajouter</button>
+                        <a class="btn btn-secondary btncat btn-lg" type="button" href="listemployee.html">Annuler</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="Addemployees.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
